@@ -24,7 +24,46 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="../images/logo02-03.png" alt="研和门窗">
+                </div>
+                <div clas="col-md-4">
+                    <h1>研和门窗<small>门窗领导者</small></h1>
+                </div>
+        </div>
+        <nav class="navbar navbar-inverse" id="navbar" role="navigation">
+            <div class="navbar-header">
+                <button class="navbar-toggle">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand active">研和</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#/about">关于研和</a></li>
+                    <li><a href="#/products">产品介绍</a></li>
+                    <li><a href="#">新闻动态</a></li>
+                    <li><a href="#">品牌故事</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </nav>    
+    <div ng-view="">
+    </div>
+    <div>
+        <br />
+    </div>
+    <div>
+        <footer>
+            <p>Put together in less than five minutes by <a href="http://www.martinbean.co.uk/" rel="author">Martin Bean</a>. Uses <a href="http://twitter.github.com/bootstrap/" rel="external">Twitter Bootstrap</a> and <a href="http://ryanfait.com/sticky-footer/" rel="external">Ryan Fait&rsquo;s Sticky Footer</a>.</p>
+        </footer>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -51,13 +90,17 @@
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/WOW/dist/wow.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/products.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
         <!-- endbuild -->
+    <script src="bower_components/jquery-waypoints/waypoints.js"></script>
     <script src="bower_components/bootstrap/js/carousel.js"></script>
 </body>
 </html>

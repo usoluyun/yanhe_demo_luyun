@@ -7,4 +7,10 @@ angular.module('yanheDemoLuyunApp')
       'AngularJS',
       'Karma'
     ];
+    angular.element(document).ready(function () {
+			$('#navbar').waypoint(function(direction) {
+			  	$('#navbar').removeClass('navbar-fixed-top');
+			});
+		});
   });
+
